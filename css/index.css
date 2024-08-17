@@ -1,0 +1,73 @@
+/* Estilos generales que se aplican a todas las pantallas */
+.navbar-brand {
+    font-weight: bolder;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Asegura que el botón del menú siempre esté visible */
+.navbar-toggler {
+    display: block; /* Mantener visible en todas las pantallas */
+}
+
+/* Muestra el menú cuando se expande */
+.navbar-collapse {
+    display: none !important; /* Ocultar por defecto */
+}
+
+.navbar-collapse.show {
+    display: block !important; /* Mostrar cuando está expandido */
+}
+
+/* Estilos para el menú desplegable */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco Traslucido */
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco traslucido */
+    min-width: 160px;
+    box-shadow: 0px 0px 16px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.sub-dropdown {
+    position: relative;
+}
+
+.sub-dropdown-content {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+.sub-dropdown:hover .sub-dropdown-content {
+    display: block;
+}
+
+img {
+   margin-right: 10px;
+}
