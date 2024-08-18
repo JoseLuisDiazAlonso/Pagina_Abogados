@@ -1,4 +1,9 @@
 /* Estilos generales que se aplican a todas las pantallas */
+.header {
+    width: 90vw;
+    margin-left: 10px;
+}
+
 .navbar-brand {
     font-weight: bolder;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
@@ -6,16 +11,19 @@
 
 /* Asegura que el botón del menú siempre esté visible */
 .navbar-toggler {
-    display: block; /* Mantener visible en todas las pantallas */
+    display: block;
+    /* Mantener visible en todas las pantallas */
 }
 
 /* Muestra el menú cuando se expande */
 .navbar-collapse {
-    display: none !important; /* Ocultar por defecto */
+    display: none !important;
+    /* Ocultar por defecto */
 }
 
 .navbar-collapse.show {
-    display: block !important; /* Mostrar cuando está expandido */
+    display: block !important;
+    /* Mostrar cuando está expandido */
 }
 
 /* Estilos para el menú desplegable */
@@ -25,7 +33,8 @@
 }
 
 .dropbtn {
-    background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco Traslucido */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Fondo blanco Traslucido */
     color: black;
     padding: 16px;
     font-size: 16px;
@@ -36,7 +45,8 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco traslucido */
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Fondo blanco traslucido */
     min-width: 160px;
     box-shadow: 0px 0px 16px 8px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -69,5 +79,59 @@
 }
 
 img {
-   margin-right: 10px;
+    margin-right: 10px;
 }
+
+/*Damos desarrollo a la imagen principal*/
+
+#backgroundDiv {
+    width: 100vw;
+    background-image: url("../media/imagen-justicia.jpg");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 800px;
+    color: white;
+    /*Es el color del texto.*/
+    text-align: center;
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#changingText {
+    position: absolute;
+    top: 50%;
+    /*Ajusta la posición vertical del texto*/
+    left: 50%;
+    /*Ajusta la posición horizontal del texto.*/
+    transform: translate(-50%, -50%);
+    /*Nos permite posicionar un elemento en el centro tanto horizontal como verticalmente dentro del contenedor.*/
+    font-size: 24px;
+}
+
+/*Damos estilo al div secundary*/
+
+.secundary {
+    background-color: orange;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);/*Crea tres columnas iguales*/
+    gap: 20px;/*Espacio entre las columnas*/
+    align-items: center;;
+}
+
+.secundary div {
+    margin-top: 10px;
+    text-align: center;/*Centra el contenido de cada div*/
+}
+
+@media (max-width:900px) {
+    
+    #backgroundDiv {
+        width: 100vw;
+        background-size: cover;
+        background-position: center;
+    }
+
+}
+
