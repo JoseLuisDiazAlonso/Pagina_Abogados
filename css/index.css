@@ -1,7 +1,11 @@
+body {
+    margin-left: 20px;
+    margin-right: 20px;
+}
 /* Estilos generales que se aplican a todas las pantallas */
 .header {
     width: 90vw;
-    margin-left: 10px;
+    
 }
 
 .navbar-brand {
@@ -85,18 +89,20 @@ img {
 /*Damos desarrollo a la imagen principal*/
 
 #backgroundDiv {
-    width: 100vw;
+    width: 90vw;
     background-image: url("../media/imagen-justicia.jpg");
+    background-color: aliceblue;
     background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    height: 800px;
+    height: 700px;
     color: white;
     /*Es el color del texto.*/
     text-align: center;
     font-weight: bolder;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
 }
 
 #changingText {
@@ -113,25 +119,77 @@ img {
 /*Damos estilo al div secundary*/
 
 .secundary {
+    width: 90vw;
     background-color: orange;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);/*Crea tres columnas iguales*/
-    gap: 20px;/*Espacio entre las columnas*/
-    align-items: center;;
+    grid-template-columns: repeat(3, 1fr);
+    /*Crea tres columnas iguales*/
+    gap: 20px;
+    /*Espacio entre las columnas*/
+    align-items: center;
+    z-index: -1;
+
 }
 
 .secundary div {
     margin-top: 10px;
-    text-align: center;/*Centra el contenido de cada div*/
+    text-align: center;
+    /*Centra el contenido de cada div*/
+}
+
+/*Aquí va el div de la oficina*/
+
+.office {
+    width: auto;
+    text-align: center;    
+
+}
+
+.office img {
+    width: 90vw;
+    height: auto;
+    border-radius: 50%;
+    /*Otorga un aspecto ovalado a la imagen*/
+    overflow: hidden;
+    /*Ajusta la imagen al marco*/
+    
+}
+
+.office p {
+    width: auto;
+    margin-top: 20px;
+    font-size: x-large;
+
+}
+
+/*Aqui va el diseño del whyChoose*/
+
+.whyChoose {
+    width: auto;
+    text-align: center;
+    background-color: orange;
+    border-radius: 5%;
+}
+
+.whyChoose img {
+    width: 90vw;
+    height: auto;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.whyChoose p {
+    width: auto;
+    margin-top: 20px;
+    font-size: x-large;
 }
 
 @media (max-width:900px) {
-    
     #backgroundDiv {
-        width: 100vw;
+        width: 90vw;
         background-size: cover;
         background-position: center;
     }
 
-}
 
+}
