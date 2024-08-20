@@ -2,10 +2,13 @@ body {
     margin-left: 20px;
     margin-right: 20px;
 }
+
 /* Estilos generales que se aplican a todas las pantallas */
 .header {
     width: 90vw;
-    
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+
 }
 
 .navbar-brand {
@@ -91,7 +94,6 @@ img {
 #backgroundDiv {
     width: 90vw;
     background-image: url("../media/imagen-justicia.jpg");
-    background-color: aliceblue;
     background-size: auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -102,11 +104,12 @@ img {
     text-align: center;
     font-weight: bolder;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    
+
 }
 
 #changingText {
     position: absolute;
+    font-family: 'Courier New', Courier, monospace;
     top: 50%;
     /*Ajusta la posición vertical del texto*/
     left: 50%;
@@ -120,6 +123,8 @@ img {
 
 .secundary {
     width: 90vw;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
     background-color: orange;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -141,9 +146,12 @@ img {
 
 .office {
     width: auto;
-    text-align: center;    
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: center;
 
 }
+
 
 .office img {
     width: 90vw;
@@ -152,7 +160,7 @@ img {
     /*Otorga un aspecto ovalado a la imagen*/
     overflow: hidden;
     /*Ajusta la imagen al marco*/
-    
+
 }
 
 .office p {
@@ -166,6 +174,7 @@ img {
 
 .whyChoose {
     width: auto;
+    font-family: 'Courier New', Courier, monospace;
     text-align: center;
     background-color: orange;
     border-radius: 5%;
@@ -184,6 +193,100 @@ img {
     font-size: x-large;
 }
 
+/*Ahora damos formato a la sección de servicios.*/
+
+.service {
+    width: 95vw;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    display: flex;
+    /*Usamos flexbox para alinear los elementos*/
+    flex-direction: column;
+    /*alinea los elementos en columna*/
+    align-items: center;
+    /*Centra los elementos horizontalmente*/
+    justify-content: center;
+    /*Centra los elementos verticalmente*/
+    text-align: center;
+    padding: 40px;
+    /*Centra el texto dentro de los elementos*/
+    background-color: orange;
+    border-radius: 5%;
+}
+
+.service .card {
+    margin: 10px 0;
+    /*Espaciado entre las tarjetas*/
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+    /*Espaciado dentro de la tarjeta*/
+    margin: 10px;
+    /*Espaciado fuera de la tarjeta*/
+}
+
+.card img {
+    max-width: 100%;
+    /*Asegura que la imagen no sea más ancha que su contenedor*/
+    height: auto;
+    /*Mantiene la proporción de la imagen*/
+    margin-bottom: 15px;
+    /*Añade espacio debajo de la imagen*/
+}
+
+.card-body {
+    max-width: 100%;
+    /*Aseguramos que la imagen no sea más ancha que su contenedor*/
+    height: auto;
+    /*Mantiene la proporción de la imagen*/
+    margin-bottom: 15px;
+    /*Añade espacio debajo de la imagen*/
+}
+
+.service,
+#card1,
+#card2 {
+    display: inline-block;
+}
+
+#card1 {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.card a {
+    font-weight: bold;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+/*Damos diseño al footer*/
+
+.foot {
+    background-color: black;
+    border-radius: 5%;
+    margin-top: 10px;
+}
+
+.foot h2 {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
 @media (max-width:900px) {
     #backgroundDiv {
         width: 90vw;
@@ -191,5 +294,41 @@ img {
         background-position: center;
     }
 
+    /*Ahora damos formato a los cards y al div service*/
 
+    .service {
+        width: 93vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .service .card {
+        margin: 10px 0;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .card img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    .card-body {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 }
