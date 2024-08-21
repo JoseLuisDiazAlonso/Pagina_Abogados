@@ -272,17 +272,75 @@ h2 {
     font-weight: bold;
 }
 
+/*Damos formato al icono del whatsapp*/
+
+.icono_whatsapp {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+    transition: opacity 0.5s;
+}
+
+.icono_whatsapp a {
+    display: block;
+
+}
+
 /*Damos diseño al footer*/
 
 .foot {
     background-color: black;
     border-radius: 5%;
     margin-top: 10px;
+    text-align: center;
 }
 
 .foot h2 {
     color: white;
     font-family: 'Courier New', Courier, monospace;
+}
+
+#phone {
+    display: inline-flex;
+}
+
+#phone p {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#cellphone {
+    display: inline-flex;
+}
+
+#cellphone p {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#legalConditions {
+    text-align: center;
+}
+
+#legalConditions a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+
+}
+
+#location {
+    text-align: center;
+}
+
+#location p {
+    color: white;
 }
 
 
