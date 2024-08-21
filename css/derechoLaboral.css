@@ -1,0 +1,168 @@
+body {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Estilos generales que se aplican a todas las pantallas */
+.header {
+    width: 90vw;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+
+}
+
+.navbar-brand {
+    font-weight: bolder;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Asegura que el botón del menú siempre esté visible */
+.navbar-toggler {
+    display: block;
+    /* Mantener visible en todas las pantallas */
+}
+
+/* Muestra el menú cuando se expande */
+.navbar-collapse {
+    display: none !important;
+    /* Ocultar por defecto */
+}
+
+.navbar-collapse.show {
+    display: block !important;
+    /* Mostrar cuando está expandido */
+}
+
+/* Estilos para el menú desplegable */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Fondo blanco Traslucido */
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Fondo blanco traslucido */
+    min-width: 160px;
+    box-shadow: 0px 0px 16px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.sub-dropdown {
+    position: relative;
+}
+
+.sub-dropdown-content {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+}
+
+.sub-dropdown:hover .sub-dropdown-content {
+    display: block;
+}
+
+img {
+    margin-right: 10px;
+}
+
+/*Damos formato a la sección*/
+
+.section {
+    text-align: center;
+}
+
+.section h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    
+}
+
+/*Damos diseño al footer*/
+
+.foot {
+    background-color: black;
+    border-radius: 5%;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.foot h2 {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#phone {
+    display: inline-flex;
+}
+
+#phone p {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#cellphone {
+    display: inline-flex;
+}
+
+#cellphone p {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+#legalConditions {
+    text-align: center;
+}
+
+#legalConditions a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+
+}
+
+#location {
+    text-align: center;
+}
+
+#location p {
+    color: white;
+}
+
+
+
+@media (max-width:900px) {
+    #backgroundDiv {
+        width: 90vw;
+        background-size: cover;
+        background-position: center;
+    }
+}
