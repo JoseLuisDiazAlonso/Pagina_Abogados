@@ -172,6 +172,21 @@ img {
 
 }
 
+/*Damos formato al icono del whatsapp*/
+
+.icono_whatsapp {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+    transition: opacity 0.5s;
+}
+
+.icono_whatsapp a {
+    display: block;
+
+}
+
 /*Damos diseño al footer*/
 
 .foot {
