@@ -220,6 +220,7 @@ img {
 }
 
 .card {
+    width: 18rem;
     display: flex;
     flex-direction: column;
     align-items: center;
