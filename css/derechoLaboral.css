@@ -276,7 +276,7 @@ img {
     color: white;
 }
 
-/*Media query para tablets y monitores grandes*/
+/*Media query monitores grandes*/
 
 @media screen and (min-width: 700px) and (max-width: 3270px) {
 
@@ -348,7 +348,12 @@ img {
 
 }
 
+/*Damos formato para tablets*/
+
 @media screen and (min-width:750px) and (max-width:830px) {
+
+    /*Esta es la parte del código en la que van las cards*/
+
     .section {
         width: 90vw;
         display: grid;
@@ -365,6 +370,8 @@ img {
     .card img {
         height: 150px;
     }
+
+    /*Diseños del footer*/
 
     .foot {
         width: 90vw;

@@ -89,89 +89,120 @@ img {
     margin-right: 10px;
 }
 
-/*Damos formato al título de la sección*/
+/*Damos desarrollo a la imagen principal*/
+
+#backgroundDiv {
+    width: 90vw;
+    background-image: url("../media/imagen-justicia.jpg");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    height: 700px;
+    color: white;
+    /*Es el color del texto.*/
+    text-align: center;
+    font-weight: bolder;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+#changingText {
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    top: 50%;
+    /*Ajusta la posición vertical del texto*/
+    left: 50%;
+    /*Ajusta la posición horizontal del texto.*/
+    transform: translate(-50%, -50%);
+    /*Nos permite posicionar un elemento en el centro tanto horizontal como verticalmente dentro del contenedor.*/
+    font-size: 24px;
+}
+
+/*Estilos de la sección secundaria*/
 
 .title h1 {
     text-align: center;
 }
 
 .section {
-    width: 95vw;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bold;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    justify-items: center;
-    padding: 40px;
+    width: 90vw;
+    padding: 20px;
     background-color: orange;
     border-radius: 5%;
-    text-align: center;
-
+    margin: 0 auto;
+    /*centra la sección*/
+    max-width: 1200px;
+    /*Limitar el ancho máximo*/
+    align-items: start;
 }
 
-.section .card {
-    margin: 10px 0;
-    /*Espaciado entre las tarjetas*/
-}
 
 .card {
-    width: 18rem;
-    height: 25rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
-    padding: 15px;
-    /*Espaciado dentro de la tarjeta*/
-    margin: 10px;
-    /*Espaciado fuera de la tarjeta*/
-    box-sizing: border-box;
-    /*Aseguran que el padding y border están dentro del tamaño definido*/
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
     overflow: hidden;
+    height: 300px;
+    box-sizing: border-box;
+    padding: 10px;
+    /*Añade espcacio interno*/
+    margin-top: 10px;
 }
 
 .card img {
-    width: 99%;
+    width: 100%;
     /*Asegura que la imagen no sea más ancha que su contenedor*/
-    height: 290px;
+    height: 150px;
+    /*Mantiene la proporción de la imagen*/
     object-fit: cover;
-    /*Hace que la imagen cubra el area sin distorsión*/
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     /*Añade espacio debajo de la imagen*/
 }
 
 .card-body {
-    width: 100%;
-    /*Aseguramos que la imagen no sea más ancha que su contenedor*/
     flex-grow: 1;
-    /*Permite que el texto ocupe el espacio restante disponible*/
+    /*Permite que el cuerpo de la tarjeta ocupe el espacio restante*/
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px;
     text-align: center;
-    overflow: hidden;
-
 }
 
-.card-body p {
+.card-text {
     margin: 0;
-    padding: 0;
-    font-size: 1rem;
-    line-height: 1.2;
-    max-height: 4rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.section h1 {
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: bolder;
 
 }
 
-/*Damos formato al icono del whatsapp*/
+.card a {
+    font-weight: bold;
+}
+
+/*Diseño de la barra de los móviles, email y ubicación*/
+
+.options {
+    width: 90vw;
+    display: inline-flex;
+    justify-content: space-between;
+
+}
+
+.options,
+.phone,
+.email,
+.ubication {
+    width: 80vw;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+/*Damos estilo al whatsap*/
 
 .icono_whatsapp {
     position: fixed;
@@ -186,42 +217,14 @@ img {
 
 }
 
-/*Damos formato a la sección de teléfono, email y ubicación*/
-
-.options {
-    width: 90vw;
-    display: flex;
-    justify-content: space-between;
-    /*Alinea los elementos con un espacion entre ellos*/
-    align-items: center;
-    overflow: hidden;
-    /*Evita el scroll si los elementos exceden el ancho del contenedor*/
-    box-sizing: border-box;
-    /*Asegura que el padding y el border estén incluidos en el ancho totoal*/
-    padding: 0 10px;
-    /*Puedes ajustar el padding según tus necesidades.*/
-    margin-left: 140px;
-
-}
-
-.phone,
-.email,
-.ubication {
-    flex-shrink: 0;
-    /*Evita que los elementos se encojan o superpongan*/
-    margin-left: 170px;
-    
-}
-
 /*Damos diseño al footer*/
 
 .foot {
+    width: 90vw;
     background-color: black;
     border-radius: 5%;
-    margin-top: 10px;
     text-align: center;
-    margin-left: 30px;
-    margin-right: 30px;
+
 }
 
 .foot h2 {
@@ -271,102 +274,120 @@ img {
     color: white;
 }
 
-@media (max-width:900px) {
-    #backgroundDiv {
-        width: 90vw;
-        background-size: cover;
-        background-position: center;
+/*Media query monitores grandes*/
+
+@media screen and (min-width: 700px) and (max-width: 3270px) {
+
+    body {
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
-    /*Ahora damos formato a los cards y al div section*/
+    /*Estilo del Whatsap*/
+
+    .icono_whatsapp {
+        margin-left: 60px;
+    }
+
+    /*Estilo de la sección secundaria*/
 
     .section {
-        width: 93vw;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding-left: 10px;
-        padding-right: 10px;
+        width: 100%;
+        background-color: orange;
+        padding: 20px;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        align-items: start;
+        max-width: 3270px;
 
-    }
-
-    .section .card {
-        margin: 10px 0;
     }
 
     .card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 15px;
-        margin: 10px;
+        width: 100%;
+        height: auto;
+        justify-content: space-between;
+        /*Fija la altura de las tarjetas*/
+        margin-top: 50px;
+
     }
 
     .card img {
-        max-width: 100%;
-        height: auto;
-        margin-bottom: 15px;
+        height: 300px;
+        /*Fija una altura para las imágenes*/
+        margin-left: 10px;
+        margin-left: 10px;
+        object-fit: cover;
     }
 
-    .card-body {
+
+    /*Estilo del footer*/
+
+    .foot {
         width: 100%;
-        display: flex;
-        justify-content: center;
+        max-width: 3270px;
+
     }
-}
-
-/*Damos formato a la sección de teléfono, email y ubicación*/
-
-.options {
-    width: 90vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /*Alinea los elementos con un espacion entre ellos*/
-    align-items: center;
-    overflow: hidden;
-    /*Evita el scroll si los elementos exceden el ancho del contenedor*/
-    box-sizing: border-box;
-    /*Asegura que el padding y el border estén incluidos en el ancho totoal*/
-    padding: 0 10px;
-    /*Puedes ajustar el padding según tus necesidades.*/
-
-}
-
-.phone,
-.email,
-.ubication {
-    flex-shrink: 0;
-    /*Evita que los elementos se encojan o superpongan*/
-}
-
-@media screen and (min-width: 600px) and (max-width:768px) {
-    /*Damos formato a la sección de teléfono, email y ubicación*/
 
     .options {
         width: 90vw;
-        display: flex;
-        align-items: center;
         justify-content: space-between;
-        /*Alinea los elementos con un espacion entre ellos*/
-        align-items: center;
-        overflow: hidden;
-        /*Evita el scroll si los elementos exceden el ancho del contenedor*/
-        box-sizing: border-box;
-        /*Asegura que el padding y el border estén incluidos en el ancho totoal*/
-        padding: 0 10px;
-        /*Puedes ajustar el padding según tus necesidades.*/
 
     }
 
+    .options,
     .phone,
     .email,
     .ubication {
-        flex-shrink: 0;
-        /*Evita que los elementos se encojan o superpongan*/
+        width: 90vw;
+        margin-left: 140px;
     }
+
+}
+
+/*Damos formato para tablets*/
+
+@media screen and (min-width:750px) and (max-width:870px) {
+
+    /*Esta es la parte del código en la que van las cards*/
+
+    .section {
+        width: 90vw;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .card {
+        height: auto;
+        margin-right: 20px;
+    }
+
+    .card img {
+        height: 150px;
+    }
+
+    /*Diseños del footer*/
+
+    .foot {
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .options {
+        width: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .options,
+    .phone,
+    .email,
+    .ubication {
+        margin-left: 40px;
+    }
+
 }
