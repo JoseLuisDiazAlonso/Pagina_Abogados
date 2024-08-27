@@ -31,10 +31,19 @@ Este proyecto es una página web estática desarrollada con HTML, CSS y JavaScri
 - **CSS**: Estilos y diseño visual del sitio web.
 - **JavaScript**: Interactividad adicional y funcionalidades para mejorar la experiencia del usuario.
 
-## Instalación
+## 📦 Instalación
 
 Para ver el proyecto en tu entorno local, sigue estos pasos:
 
 1. **Clona el Repositorio**:
    ```bash
    git clone https://github.com/tu-usuario/nombre-repositorio.git
+
+2. **Navega al Directorio del Proyecto**:
+
+   cd nombre-repositorio
+   
+4. **Abre el Proyecto en tu navegador**:
+
+   Abre el archivo 'index.html' en tu navegador para ver la página de inicio
+
