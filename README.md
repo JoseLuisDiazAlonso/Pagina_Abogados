@@ -25,7 +25,7 @@ Este proyecto es una página web estática desarrollada con HTML, CSS y JavaScri
 - **Integración con WhatsApp**: Facilita el contacto rápido con el despacho mediante un enlace directo a WhatsApp.
 - **Navegación Intuitiva**: Menú y enlaces que facilitan la navegación entre las diferentes secciones del sitio.
 
-## Tecnologías Utilizadas
+## 🛠 Tecnologías y Herramientas
 
 - **HTML**: Estructura del contenido de las páginas.
 - **CSS**: Estilos y diseño visual del sitio web.
