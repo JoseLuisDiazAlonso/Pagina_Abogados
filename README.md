@@ -6,12 +6,16 @@ Bienvenido al proyecto del sitio web para un despacho de abogados. Este sitio we
 
 Este proyecto es una página web estática desarrollada con HTML, CSS y JavaScript. El sitio está diseñado para ofrecer una experiencia de usuario intuitiva y funcional para los visitantes interesados en los servicios legales del despacho.
 
+[![HTML5](https://img.shields.io/badge/HTML5-39E09B?style=for-the-badge&logo=HTML5&logoColor=white&labelColor=101010)]()
+[![CSS](https://img.shields.io/badge/CSS-1877F2?style=for-the-badge&logo=CSS&logoColor=white&labelColor=101010)]()
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white&labelColor=101010)]()
+
 ### Secciones del Sitio Web
 
 - **Página de Inicio (index)**: La página principal del sitio que proporciona una visión general del despacho y presenta las secciones principales.
 - **Derecho Laboral**: Información sobre los servicios legales especializados en derecho laboral.
 - **Derecho Social**: Información sobre los servicios legales relacionados con el derecho social.
-- **Contacto**: Formulario para solicitar una cita con el despacho. Incluye campos para el nombre, correo electrónico, teléfono y mensaje.
+- **Contacto**: Formulario para solicitar una cita con el despacho. 
 - **Acceso a WhatsApp**: Enlace para contactar al despacho a través de WhatsApp directamente desde la página web.
 
 ## Características
