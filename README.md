@@ -2,6 +2,8 @@
 
 Bienvenido al proyecto del sitio web para un despacho de abogados. Este sitio web está diseñado para proporcionar información sobre los servicios legales ofrecidos, facilitar el contacto con el despacho y permitir a los usuarios solicitar citas fácilmente.
 
+**Todo el código lo puedes encontrar en la rama master**
+
 ## Descripción del Proyecto
 
 Este proyecto es una página web estática desarrollada con HTML, CSS y JavaScript. El sitio está diseñado para ofrecer una experiencia de usuario intuitiva y funcional para los visitantes interesados en los servicios legales del despacho.
